@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 align="center">Materi html form</h1>
+    <form action="POST" action="proses.php">
+        <label for="nama">Ketikan nama Anda: </label><br>
+        <input type="text" name="nama" id="nama"><br>
+        <input type="submit" value="kirim">
+    </form>
+    <hr>
+    <h1 align="center">Form 2</h1>
+    <form action="POST" aria-activedescendant="porses.php">
+        Silahkan isi data Anda
+        <input type="hidden" name="halaman" id="1">
+        <table border="1">
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td><input type="nama" name="nama" id="nama" maxlength="40" size="20"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Pasword</label></td>
+                <td><input type="password" name="pass" id="pass" max="8" size="8"></td>
+            </tr>
+            <tr>
+                <td><label for="jenkel">Jenis Kelamin</label></td>
+                <td>
+                    <input type="radio" name="jenkel" id="jenkel" value="L">Laki-laki <br>
+                    <input type="radio" name="jenkel" id="jenkel" value="P">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat : </label></td>
+                <td>
+                    <textarea name="alamat" id="alamat" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="bayar">Sudah bayar?</label></td>
+                <td><input type="checkbox" name="bayar" id="bayar">Sudah</td>
+            </tr>
+        </table>
+        <input type="submit" name="kirim" id="kirim" value="kirim">
+        <input type="Reset" name="rest" id="rest" value="rest">
+    </form>
+    
+</body> 
+</html>
